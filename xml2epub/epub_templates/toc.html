@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Table of Contents</title>
+	<style>
+		*{
+			font-family: system-ui, sans-serif;
+		}
+		h2 {
+			color: #585858;
+		}
+
+		a {
+			text-decoration: none;
+			color: rgb(15, 150, 190);
+			transition: 0.3s all linear;
+			font-size: 15px;
+		}
+		a:hover {
+			opacity: 0.8;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Table of Contents</h2>
+	<hr class="line-index" />
+	<div id="chapters">
+		<ul>
+			{%- for chapter in chapters %}
+			<li><a href="{{ chapter.link }}">{{ chapter.title }}</a></li>
+			{%- endfor %}
+		</ul>
+	</div>
+</body>
+
+</html>
