@@ -2,7 +2,7 @@
 
 # Original Documentation
 
-[Original] (https://github.com/dfface/xml2epub#readme)
+[Original](https://github.com/dfface/xml2epub#readme)
 
 Batch convert multiple web pages, html files or images into one e-book.
 
